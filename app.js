@@ -1,7 +1,10 @@
 const express = require('express');
+const cros=require('cros');
 const app = express();
 
 app.use(express.json());
+
+app.use(cros());
 
 // Create an initial list to store user data
 const users = [
